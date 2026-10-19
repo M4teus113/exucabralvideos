@@ -1,0 +1,599 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>EXU CABRAL - SITE OFICIAL 2013</title>
+
+<style>
+body {
+    background: #240044;
+    color: white;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 12px;
+    margin: 0;
+}
+
+a { color: #0000ee; }
+a:visited { color: #551a8b; }
+
+#pagina {
+    width: 900px;
+    max-width: 98%;
+    margin: 10px auto;
+    background: white;
+    color: black;
+    border: 5px ridge silver;
+}
+
+.topo {
+    text-align: center;
+    padding: 20px;
+    color: yellow;
+    background: #57008d;
+    border-bottom: 5px ridge #ffcc00;
+}
+
+.topo h1 {
+    font-family: Impact, "Arial Black", sans-serif;
+    font-size: 43px;
+    margin: 0;
+    text-shadow: 3px 3px red;
+}
+
+.subtitulo {
+    color: white;
+    font-weight: bold;
+}
+
+marquee {
+    background: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 8px;
+}
+
+.menu {
+    background: #cccccc;
+    padding: 8px;
+    text-align: center;
+    border-bottom: 3px ridge white;
+}
+
+.menu button {
+    font-size: 12px;
+    font-weight: bold;
+    padding: 7px;
+    margin: 2px;
+    border: 3px outset white;
+    cursor: pointer;
+}
+
+.menu button:active {
+    border-style: inset;
+}
+
+.conteudo {
+    padding: 15px;
+    min-height: 350px;
+    background: white;
+}
+
+.secao { display: none; }
+.secao.ativa { display: block; }
+
+h2 {
+    color: purple;
+    background: #eeeeff;
+    padding: 7px;
+    border-bottom: 2px dashed purple;
+}
+
+.caixa {
+    border: 2px groove silver;
+    padding: 12px;
+    margin: 12px 0;
+    background: #f5f0ff;
+}
+
+.grade {
+    display: table;
+    width: 100%;
+    border-spacing: 8px;
+}
+
+.produto {
+    display: table-cell;
+    width: 33%;
+    padding: 10px;
+    text-align: center;
+    vertical-align: top;
+    background: #eeeeee;
+    border: 3px ridge silver;
+}
+
+.miniatura {
+    height: 90px;
+    background: #333366;
+    color: yellow;
+    font-weight: bold;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px inset silver;
+}
+
+.botao {
+    border: 3px outset white;
+    background: #dddddd;
+    padding: 7px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input, textarea, select {
+    display: block;
+    width: 95%;
+    padding: 7px;
+    margin: 5px 0 12px;
+    border: 2px inset silver;
+    font-family: Verdana, sans-serif;
+}
+
+textarea { height: 90px; }
+
+.rodape {
+    padding: 20px;
+    text-align: center;
+    color: white;
+    background: #222222;
+    border-top: 5px ridge silver;
+}
+
+.bot {
+    background: #e9e9e9;
+    border: 3px ridge #888;
+    padding: 12px;
+    margin-top: 15px;
+    color: black;
+}
+
+.botTitulo {
+    color: white;
+    background: #000080;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.respostaBot {
+    background: white;
+    border: 2px inset silver;
+    min-height: 60px;
+    padding: 10px;
+    margin: 8px 0;
+    line-height: 1.6;
+}
+
+.status {
+    color: green;
+    font-weight: bold;
+}
+
+.piscando {
+    animation: pisca 0.8s steps(2, start) infinite;
+}
+
+@keyframes pisca {
+    to { visibility: hidden; }
+}
+
+@media(max-width: 600px) {
+    .topo h1 { font-size: 29px; }
+    .grade { display: block; }
+    .produto { display: block; width: auto; margin-bottom: 10px; }
+}
+</style>
+</head>
+
+<body>
+<div id="pagina">
+
+<div class="topo">
+    <h1>☠ EXU CABRAL ☠</h1>
+    <p class="subtitulo">★ SITE OFICIAL ★ DESDE 2011 ★</p>
+    <p>O PORTAL MAIS POLÊMICO DA INTERNET!</p>
+    <span class="piscando">*** ATUALIZADO EM 2013 ***</span>
+</div>
+
+<marquee scrollamount="5">
+★ BEM-VINDO AO SITE DO EXU CABRAL ★ ENTRE NO CANAL ★
+DEIXE SEU RECADO ★ SITE OFICIAL 2013 ★
+</marquee>
+
+<div class="menu">
+    <button onclick="abrir('inicio')">INÍCIO</button>
+    <button onclick="abrir('videos')">VÍDEOS</button>
+    <button onclick="abrir('fotos')">FOTOS</button>
+    <button onclick="abrir('redes')">REDES SOCIAIS</button>
+    <button onclick="abrir('loja')">LOJA</button>
+    <button onclick="abrir('contato')">CONTATO / BOT</button>
+    <button onclick="abrir('recados')">LIVRO DE VISITAS</button>
+</div>
+
+<div class="conteudo">
+
+<!-- INICIO -->
+<div id="inicio" class="secao ativa">
+    <h2>🏠 BEM-VINDO AO SITE OFICIAL!</h2>
+
+    <div class="caixa">
+        <h3>🔥 MENSAGEM DO EXU CABRAL 🔥</h3>
+        Salve, galera! Bem-vindos ao meu site oficial!
+        Aqui vocês encontram meus vídeos, fotos, produtos
+        e as últimas novidades do canal!
+        <p><b>DIVULGUEM PARA TODOS OS SEUS AMIGOS!!!</b></p>
+    </div>
+
+    <h2>📢 NOTÍCIAS DO SITE</h2>
+    <div class="caixa">
+        <b>15/06/2013:</b> Site atualizado!<hr>
+        <b>02/05/2013:</b> Novidades chegando ao canal!<hr>
+        <b>20/03/2013:</b> A loja oficial está aberta para visitação!
+    </div>
+
+    <center>
+        <p class="piscando" style="color:red;font-weight:bold">
+            NÃO ESQUEÇA DE ASSINAR O LIVRO DE VISITAS!!!
+        </p>
+        <p>VISITANTES: <span id="visitas">000013337</span></p>
+        <p><small>Melhor visualizado em 1024x768</small></p>
+    </center>
+</div>
+
+<!-- VIDEOS -->
+<div id="videos" class="secao">
+    <h2>▶ VÍDEOS DO EXU CABRAL</h2>
+    <p>Confira o canal oficial no YouTube!</p>
+
+    <div class="caixa">
+        <h3>CANAL OFICIAL</h3>
+        <p>Todos os vídeos do Exu Cabral estão no canal:</p>
+        <a href="https://www.youtube.com/@cauacabral."
+           target="_blank" rel="noopener">
+           >>> CLIQUE AQUI PARA ACESSAR O YOUTUBE <<<
+        </a>
+    </div>
+
+    <div class="caixa">
+        <h3>VÍDEOS EM DESTAQUE</h3>
+        <p>▶ Vídeo clássico do canal</p>
+        <p>▶ Respondendo aos comentários</p>
+        <p>▶ Especial de 2013</p>
+        <small>Os títulos acima são exemplos. Os vídeos reais estão no canal.</small>
+    </div>
+</div>
+
+<!-- FOTOS -->
+<div id="fotos" class="secao">
+    <h2>📷 GALERIA DE FOTOS</h2>
+
+    <div class="grade">
+        <div class="produto">
+            <div class="miniatura">FOTO 001</div>
+            <p>Álbum de 2011</p>
+        </div>
+        <div class="produto">
+            <div class="miniatura">FOTO 002</div>
+            <p>Bastidores</p>
+        </div>
+        <div class="produto">
+            <div class="miniatura">FOTO 003</div>
+            <p>Especial 2013</p>
+        </div>
+    </div>
+
+    <p>Para colocar suas fotos, salve os arquivos na mesma pasta do site
+    e substitua uma miniatura por uma tag de imagem, como:</p>
+
+    <code>&lt;img src="foto1.jpg" width="200" alt="Foto"&gt;</code>
+</div>
+
+<!-- REDES -->
+<div id="redes" class="secao">
+    <h2>🌐 REDES SOCIAIS</h2>
+
+    <div class="caixa">
+        <h3>YouTube</h3>
+        <p>Este é o canal oficial do Exu Cabral!</p>
+        <a href="https://www.youtube.com/@cauacabral."
+           target="_blank" rel="noopener">
+           ACESSAR O CANAL OFICIAL
+        </a>
+    </div>
+
+    <div class="caixa">
+        <b>AVISO:</b> O Exu Cabral não tem Twitter nem Facebook.
+        O YouTube é a rede social listada neste site.
+    </div>
+</div>
+
+<!-- LOJA -->
+<div id="loja" class="secao">
+    <h2>🛒 LOJA OFICIAL</h2>
+    <p>PRODUTOS EXCLUSIVOS DO EXU CABRAL!!!</p>
+
+    <div class="grade">
+        <div class="produto">
+            <div class="miniatura">CAMISETA</div>
+            <h3>Camiseta Oficial</h3>
+            <p>R$ 39,90</p>
+            <button class="botao" onclick="comprar('Camiseta Oficial')">
+                COMPRAR
+            </button>
+        </div>
+
+        <div class="produto">
+            <div class="miniatura">CANeca</div>
+            <h3>Caneca Oficial</h3>
+            <p>R$ 19,90</p>
+            <button class="botao" onclick="comprar('Caneca Oficial')">
+                COMPRAR
+            </button>
+        </div>
+
+        <div class="produto">
+            <div class="miniatura">PÔSTER</div>
+            <h3>Pôster do Exu</h3>
+            <p>R$ 9,90</p>
+            <button class="botao" onclick="comprar('Pôster do Exu')">
+                COMPRAR
+            </button>
+        </div>
+    </div>
+
+    <p><small>Loja fictícia para demonstração. Não são realizadas compras.</small></p>
+</div>
+
+<!-- CONTATO E BOT -->
+<div id="contato" class="secao">
+    <h2>✉ CONTATO OFICIAL</h2>
+
+    <p>Envie sua mensagem para a equipe do site.
+    Nosso robô responderá automaticamente!</p>
+
+    <form id="formContato">
+        <label>Seu nome ou apelido:</label>
+        <input id="nome" maxlength="50" required>
+
+        <label>Assunto:</label>
+        <select id="assunto">
+            <option value="duvida">Dúvida</option>
+            <option value="video">Vídeos do canal</option>
+            <option value="parceria">Parceria</option>
+            <option value="loja">Loja</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="elogio">Elogio</option>
+            <option value="outro">Outro assunto</option>
+        </select>
+
+        <label>Sua mensagem:</label>
+        <textarea id="mensagem" maxlength="1000" required></textarea>
+
+        <button type="submit" class="botao">
+            ENVIAR MENSAGEM
+        </button>
+    </form>
+
+    <div class="bot">
+        <div class="botTitulo">
+            🤖 EXU-BOT 2013 - ATENDIMENTO AUTOMÁTICO
+        </div>
+
+        <p><span class="status">● BOT ONLINE</span></p>
+
+        <div class="respostaBot" id="respostaBot" aria-live="polite">
+            <b>Exu-Bot:</b> Olá, visitante!
+            Sou o robô oficial do site do Exu Cabral.
+            Envie uma mensagem que eu responderei!
+        </div>
+
+        <small>Atendimento automático demonstrativo.
+        Nenhuma mensagem é enviada para uma pessoa real.</small>
+    </div>
+</div>
+
+<!-- LIVRO DE VISITAS -->
+<div id="recados" class="secao">
+    <h2>📖 LIVRO DE VISITAS</h2>
+
+    <p>Deixe seu nome e mande aquele recado clássico de 2013!</p>
+
+    <form id="formRecado">
+        <label>Apelido:</label>
+        <input id="apelido" maxlength="40" required>
+
+        <label>Recado:</label>
+        <textarea id="recado" maxlength="400" required></textarea>
+
+        <button class="botao" type="submit">ASSINAR LIVRO</button>
+    </form>
+
+    <div id="listaRecados">
+        <div class="caixa"><b>Fã_2013:</b> PRIMEIRO KKKKKKK</div>
+        <div class="caixa"><b>CabralFan:</b> ATUALIZA O SITE MANO</div>
+        <div class="caixa"><b>Visitante123:</b> Salve Exu!</div>
+    </div>
+
+    <small>Recados adicionados ficam na página atual e desaparecem ao recarregar.</small>
+</div>
+
+</div>
+
+<div class="rodape">
+    <b>☠ EXU CABRAL OFICIAL ☠</b><br>
+    © 2013 - Todos os direitos reservados.<br>
+    Site fictício de demonstração.<br>
+    <a href="https://www.youtube.com/@cauacabral."
+       target="_blank" rel="noopener" style="color:yellow">
+       CANAL OFICIAL NO YOUTUBE
+    </a>
+    <p>Você está navegando no portal oficial!!!</p>
+</div>
+
+</div>
+
+<script>
+function abrir(id) {
+    document.querySelectorAll('.secao').forEach(function(secao) {
+        secao.classList.remove('ativa');
+    });
+
+    document.getElementById(id).classList.add('ativa');
+    window.scrollTo(0, 0);
+}
+
+function comprar(produto) {
+    alert(
+        'LOJA EXU CABRAL 2013\\n\\n' +
+        'Você escolheu: ' + produto + '\\n\\n' +
+        'Esta loja é apenas demonstrativa. ' +
+        'Nenhuma compra foi realizada!'
+    );
+}
+
+function responderBot(nome, assunto, mensagem) {
+    const texto = mensagem.toLowerCase();
+    let resposta = '';
+
+    if (
+        texto.includes('oi') ||
+        texto.includes('olá') ||
+        texto.includes('salve') ||
+        texto.includes('eae') ||
+        texto.includes('e aí')
+    ) {
+        resposta = 'Salve, ' + nome +
+            '! KKKKK Seja bem-vindo ao site oficial do Exu Cabral! ' +
+            'Como podemos ajudar?';
+    } else if (
+        assunto === 'video' ||
+        texto.includes('youtube') ||
+        texto.includes('canal') ||
+        texto.includes('vídeo') ||
+        texto.includes('video')
+    ) {
+        resposta = 'Olá, ' + nome +
+            '! Você pode conferir os vídeos diretamente no canal oficial: ' +
+            'https://www.youtube.com/@cauacabral. ' +
+            'Obrigado pela visita!';
+    } else if (
+        assunto === 'parceria' ||
+        texto.includes('parceria') ||
+        texto.includes('colaboração')
+    ) {
+        resposta = 'Olá, ' + nome +
+            '! Sua proposta de parceria foi recebida pelo Exu-Bot. ' +
+            'Este é um atendimento de demonstração, então a equipe ' +
+            'não recebeu sua mensagem de verdade.';
+    } else if (
+        assunto === 'loja' ||
+        texto.includes('comprar') ||
+        texto.includes('camiseta') ||
+        texto.includes('preço') ||
+        texto.includes('preco')
+    ) {
+        resposta = 'Olá, ' + nome +
+            '! A loja do site é demonstrativa e não realiza vendas reais. ' +
+            'Os preços são fictícios. Valeu por conferir!';
+    } else if (
+        assunto === 'reclamacao' ||
+        texto.includes('reclamação') ||
+        texto.includes('reclamacao') ||
+        texto.includes('problema') ||
+        texto.includes('ruim')
+    ) {
+        resposta = 'Olá, ' + nome +
+            '! Sua reclamação foi registrada apenas nesta demonstração. ' +
+            'Obrigado por avisar. Vamos fingir que a equipe está analisando ' +
+            'o caso nos bastidores KKKKK.';
+    } else if (
+        assunto === 'elogio' ||
+        texto.includes('legal') ||
+        texto.includes('gosto') ||
+        texto.includes('parabéns') ||
+        texto.includes('parabens')
+    ) {
+        resposta = 'Valeu demais, ' + nome +
+            '! A equipe fictícia do Exu Cabral agradece o carinho! ' +
+            'Continue acompanhando o canal!';
+    } else if (
+        texto.includes('obrigado') ||
+        texto.includes('obrigada') ||
+        texto.includes('valeu')
+    ) {
+        resposta = 'Tamo junto, ' + nome +
+            '! Obrigado por entrar em contato com o site oficial!';
+    } else if (
+        texto.includes('humano') ||
+        texto.includes('pessoa real') ||
+        texto.includes('atendente')
+    ) {
+        resposta = 'Sou apenas o Exu-Bot, ' + nome +
+            '! Não existe atendente conectado nesta demonstração. ' +
+            'Este robô responde usando regras programadas.';
+    } else {
+        resposta = 'Olá, ' + nome +
+            '! Sua mensagem foi processada pelo Exu-Bot 2013. ' +
+            'Obrigado por entrar em contato! Para novidades e vídeos, ' +
+            'visite o canal oficial do Exu Cabral no YouTube.';
+    }
+
+    return resposta;
+}
+
+document.getElementById('formContato').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('nome').value.trim();
+    const assunto = document.getElementById('assunto').value;
+    const mensagem = document.getElementById('mensagem').value.trim();
+    const caixa = document.getElementById('respostaBot');
+
+    if (!nome || !mensagem) return;
+
+    caixa.textContent = 'Exu-Bot: Processando sua mensagem...';
+
+    setTimeout(function() {
+        caixa.textContent = 'Exu-Bot: ' +
+            responderBot(nome, assunto, mensagem);
+    }, 900);
+
+    this.reset();
+});
+
+document.getElementById('formRecado').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    const nome = document.getElementById('apelido').value.trim();
+    const texto = document.getElementById('recado').value.trim();
+
+    if (!nome || !texto) return;
+
+    const caixa = document.createElement('div');
+    caixa.className = 'caixa';
+
+    const titulo = document.createElement('b');
+    titulo.textContent = nome + ': ';
+
+    caixa.appendChild(titulo);
+    caixa.appendChild(document.createTextNode(texto));
+
+    document.getElementById('listaRecados').prepend(caixa);
+    this.reset();
+
+    alert('RECADO ADICIONADO! VALEU PELA VISITA!!!');
+});
+</script>
+</body>
+</html>
